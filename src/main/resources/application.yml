@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/orcl
+    driverClassName: oracle.jdbc.OracleDriver
+    username: c##hr
+    password: humanresource
+  jpa:
+    database-platform: hibernate.dialect.Oracle19cDialect
+    hibernate:
+      ddl-auto: create
+  h2:
+    console:
+      enabled: true
+      path: /h2
